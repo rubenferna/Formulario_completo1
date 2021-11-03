@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Formulario FTP </title>
+    <style type="text/css">
+        label {
+            color: red;
+        }
+        input {
+            color: blue;
+        }
+        .enviar {
+            color:  green;
+        }
+    </style>
+</head>
+<body>
+<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+<table border=1>
+    <tr>
+        <th colspan=2> User Form </th>
+    </tr>
+    <tr>
+        <td>
+            <label for="nombre1">Enter Name</label>
+        </td>
+        <td>
+            <input type="text" id="nombre1" name="nombre">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="password1">Enter Password</label>
+        </td>
+        <td>
+            <input type="password" id="password1" name="password">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="direccion1">Enter Address</label>
+        </td>
+        <td>
+            <textarea row="4" cols="26" id="direccion1" name="direccion"></textarea>
+        </td> 
+    </tr>   
+    <tr>
+        <td>
+            Select Game
+        </td>
+        <td> 
+            <input type="checkbox" id="game1" name="deportes[]">
+                <label for="game1">Hockey</label><br>
+            <input type="checkbox" id="game2" name="deportes[]">
+                <label for="game2">Football</label><br>
+            <input type="checkbox" id="game3" name="deportes[]">
+                <label for="game3">Badminton</label><br>
+            <input type="checkbox" id="game4" name="deportes[]">
+                <label for="game4">Cricket</label><br>
+            <input type="checkbox" id="game5" name="deportes[]">
+                <label for="game5">Voleyball</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender
+        </td>
+        <td>
+            <input type="radio" id="genderM" name="sexo" value="Male">
+                <label for="genderM">Male</label>
+            <input type="radio" id="genderF" name="sexo" value="Female">
+                <label for="genderF">Female</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <label for="age">Select ur age</label>        
+        </td>
+        <td>
+            <select name="edad" id="age"> 
+            <option value="0" SELECTED> Elegir edad </option>
+            <option value="-18"> menor 18 </option>
+            <option value="+18"> mayor 18 </option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th colspan=2>
+            <label for="examinar1"></label>
+            <input type="file" id="examinar1">    
+        </th>   
+    </tr>
+    <tr>
+        <th colspan=2>       
+        <input type="button" value="Click me">
+        <input type="reset" id="restablecer1">
+        <input class="enviar" type="submit" id="enviar1">
+        </th>
+    </tr>
+</table>
+</body>
+</html>
